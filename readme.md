@@ -28,8 +28,8 @@ Repository ini mengikuti struktur pertemuan dari website dosen:
 ## 🚀 Cara Memulai
 1. **Clone Repository**:
    ```
-   git clone https://github.com/username/machine-learning-unpam.git
-   cd machine-learning-unpam
+   git clone https://github.com/ArayaMusawwah/Machine-Learning-Semester-5.git
+   cd Machine-Learning-Semester-5
    ```
 
 2. **Install Dependencies** (Python 3.10+):

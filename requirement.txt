@@ -4,8 +4,6 @@ matplotlib
 scikit-learn
 seaborn
 tk
-#pyqt
-#pygame
 flask
 django
 

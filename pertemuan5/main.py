@@ -75,13 +75,43 @@ y_val_best = best_rf.predict(X_val)
 print("Best RF F1(val):", f1_score(y_val, y_val_best, average="macro"))
 
 
+## Langkah 4.5 - Perbandingan Model
+import matplotlib.pyplot as plt
+
+logreg_f1 = f1_score(y_val, y_val_pred, average="macro")
+rf_f1 = f1_score(y_val, y_val_best, average="macro")
+
+models = ['Logistic Regression', 'Random Forest']
+f1_scores = [logreg_f1, rf_f1]
+
+plt.figure()
+plt.bar(models, f1_scores, color=['blue', 'green'])
+plt.ylabel('F1 Score (Macro)')
+plt.title('Perbandingan F1 Score Model (Validation Set)')
+plt.ylim(0, 1.1)
+
+for i, score in enumerate(f1_scores):
+    plt.text(i, score + 0.01, f'{score:.3f}', ha='center')
+
+plt.tight_layout()
+plt.savefig("model_comparison.png", dpi=120)
+print("Gambar perbandingan model disimpan ke model_comparison.png")
+
+
+
+
+
+
 
 ## Langkah 5 - Evaluasi Akhir (Test set)
 
 from sklearn.metrics import confusion_matrix, roc_auc_score, precision_recall_curve, roc_curve
 import matplotlib.pyplot as plt
 
-final_model = best_rf  # atau pipe_lr jika baseline lebih baik
+print(f"\n🏆 FINAL MODEL: RandomForest")
+print(f"   Alasan: CV F1 {gs.best_score_:.3f} > Baseline {f1_score(y_val, y_val_pred):.3f}")
+final_model = best_rf
+
 y_test_pred = final_model.predict(X_test)
 
 print("F1(test):", f1_score(y_test, y_test_pred, average="macro"))
@@ -128,4 +158,5 @@ def predict():
     return jsonify({"prediction": int(yhat), "proba": proba})
 
 if __name__ == "__main__":
-    app.run(port=5000)
+    # app.run(port=5000)
+    pass

@@ -1,8 +1,8 @@
 # 🧠 **LAPORAN FINAL: ARTIFICIAL NEURAL NETWORK (ANN) PREDIKSI KELULUSAN**
 
 **Tanggal:** 17 Oktober 2025  
-**Author:** Data Scientist  
-**Script:** `ann_workflow.py` *(100% Reproducible)*  
+**Author:** Muhammad Iqbal Ramadhan (231011400285)  
+**Script:** `main.py` *(100% Reproducible)*  
 **Model Final:** **ANN 64-32-16 + BatchNorm** | **F1-Test: 0.872** | **AUC: 0.945** 🚀  
 **Files:** `ann_model.h5` | `learning_curves.png` | `roc_ann.png` | `confusion_matrix_ann.png`
 

@@ -1,7 +1,7 @@
 # 📊 **LAPORAN MODEL PREDIKSI KELULUSAN MAHASISWA**
 
 **Tanggal:** 17 Oktober 2025  
-**Penulis:** Data Scientist  
+**Penulis:** Muhammad Iqbal Ramadhan (231011400285)  
 **Dataset:** `processed_kelulusan.csv` (300 records × 7 features)  
 **Model Final:** **Random Forest (Tuned)**  
 **F1-Score Test:** **0.872** 🚀

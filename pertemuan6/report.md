@@ -1,8 +1,8 @@
 # 📊 **LAPORAN: RANDOM FOREST PREDIKSI KELULUSAN MAHASISWA**
 
 **Tanggal:** 17 Oktober 2025  
-**Author:** Data Scientist  
-**Script:** `rf_workflow.py` *(100% Reproducible)*  
+**Author:** Muhammad Iqbal Ramadhan (231011400285)  
+**Script:** `main.py` *(100% Reproducible)*  
 **Model Final:** **Random Forest Tuned** | **F1-Test: 0.872** 🚀  
 **Files Generated:** `rf_model.pkl` | `roc_test.png` | `pr_test.png`
 

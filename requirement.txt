@@ -6,4 +6,5 @@ seaborn
 tk
 flask
 django
-
+tensorflow 
+joblib

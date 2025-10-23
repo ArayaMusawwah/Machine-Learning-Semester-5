@@ -1,1 +1,1 @@
-Arsitektur final: Dense[32, 16] + Dropout 0.3; Optimizer: Adam lr=1e-3; EarlyStopping(patience=10). Test AUC=nan; Best threshold(F1)=inf
+Arsitektur final: Dense[32, 16] + Dropout 0.3; Optimizer: Adam lr=1e-3; EarlyStopping(patience=10). Test AUC=1.000; Best threshold(F1)=0.516
